@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Car Accident</title>
+</head>
+<body>
+    <div style="height: 100px;width: 100px;position: absolute;top: -13px;left: -30px;" id="mydiv">
+        <img src="car.jpg" 
+        style="height: 150px;width: 250px; rotate: -16deg; ">
+    </div>
+    <div style="height:10px ;width: 430px;background-color: rgb(134, 126, 126);position: absolute;top: 120px; left: 0px;">
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br>
+    <label for="">x axis</label><input type="number" id="x" readonly>
+    <br><br><br>
+    <label for="">y axis</label><input type="number" id="y" readonly>
+    <br><br>
+    <input type="button" value="start" onclick="start()">
+    <input type="button" value="stop" onclick="stop()">
+    <script>
+        var counter = 0;
+        var vtop = 0;
+        var queueNoArray = new Array();
+        var myCar = document.getElementById("mydiv");
+        
+        function start(){
+            var queueNo = window.setInterval(keepCounting,100);
+            queueNoArray.push(queueNo);
+        }
+
+        function stop(){
+            var queueNo = queueNoArray.pop();
+            window.clearInterval(queueNo);
+        }
+
+        function keepCounting(){
+            counter = counter + 1;
+            if(counter < 456){
+                myCar.style.marginLeft = counter + "px";
+                x.value = counter;
+            } else{
+                drop();
+            }
+        }
+
+        function drop(){
+           
+            if(counter>456){
+                myCar.style.rotate = "60deg";
+                if(vtop < 400){
+                    vtop = vtop + 1;
+                    myCar.style.marginTop = vtop + "px";
+                    y.value = vtop;
+                
+                }else{
+                    document.querySelector("#mydiv img").src = "boom.jpeg";
+                }
+            }else{}
+        }
+    </script>
+</body>
+</html>

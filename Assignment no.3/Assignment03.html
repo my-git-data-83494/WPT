@@ -1,0 +1,90 @@
+<html>
+<head>
+    <title>Assignment No03</title>
+    
+</head>
+<body>
+    <center>
+        <div style="width: 200px;">
+            <h2><b>Registration Form</b></h2><hr />
+        </div>
+        <br />
+        <br />
+        <br />
+    
+    <table border="1" style="width: 1000px; height: fit-content; border-collapse: collapse;" >
+    <tr>
+        <td colspan="1">
+            <video style=" width: 500px; height: fit-content;" controls autoplay loop>
+                <source src="sunbeam.mp4" type="video/mp4">
+            </video>
+
+        </td>
+        <form>
+        <td colspan="1" style="text-align: start;">
+            <nav>
+                Name : <input type="text"  placeholder="Enter name here" name="myname" required/>
+                <br /><br />
+                BirthDate : <input type="date" name="myDob" required/>
+                <br /><br />
+                Email : <input type="email"  placeholder= "Please enter your email " name="myemail" required/>
+                <br /><br />
+                Password : <input type="password" name="mypassword" placeholder="Enter your password" required/>
+                <br /><br />
+                <label  for="address"> Address :</label>
+                <select name="state" id="mystate" required>
+                    <option value="Maharashtra">Maharashtra</option>
+                </select>
+                &nbsp;&nbsp;
+                <select name="District" id="MyDistrict" required>
+                    
+                    <option value="Pune">Pune</option>
+                    <option value="Satara">Satara</option>
+                </select>
+                &nbsp;&nbsp;
+                <select name="City" id="MyCity" required>
+                    <option value="Pune">Pune</option>
+                    <option value="Karad">Karad</option>
+                </select>
+                <br />
+                <div style="margin-left: 100px;"><h>State&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                 District&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                City</h></div>
+
+                 <br />
+                 Gender : <input type="radio" name="Gender" value="1" checked  required/>Male&nbsp;&nbsp;&nbsp;&nbsp;
+                          <input type="radio" name="Gender" value="2" checked  required/>Female
+                          <br /><br />
+
+
+                Upload Photo : &nbsp;&nbsp;
+                    <input type="file" id="myFile" name="filename" required>
+                    <input type="submit">
+                    <br /><br />
+
+                Select Your Course :                    
+                    <select name="course" id="myCourse">
+                       <option value="PGDAC">Post Graduate Diploma in Advanced Computing</option> 
+                       <option value="PGDBDA">Post Graduate Diploma in Big Data Analytics</option>
+                       <option value="PGDESD">Post Graduate Diploma in Embedded Systems Design</option>  
+                       <option value="PGDMC">PG Diploma in Mobile Computing </option>  
+                       <option value="PGDITISS">PG Diploma in IT Infrastructure, Systems & Security</option>                
+                    </select>
+                    <br /><br />
+
+        </td>
+    </tr>
+    <tr>
+        <center>
+            <td colspan="2" style="text-align: center;">
+                <button type="submit">Register</button>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <button type="reset">Clear</button>
+            </td>
+        </center>
+    </tr>
+</form>
+    </table>
+</center>
+</body>
+</html>
