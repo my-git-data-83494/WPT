@@ -1,0 +1,6 @@
+[
+  { "model": "triber", "company": "reanult", "price": 10 },
+  { "model": "commet", "company": "MG", "price": 7 },
+  { "model": "nano", "company": "tata", "price": 4 },
+  { "model": "GLS 250D", "company": "mercedes", "price": 150 }
+]

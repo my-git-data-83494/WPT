@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Test Page</h1>
+    <div id="div1"></div>
+    <div id="div2"></div>
+    <div id="div3"></div>
+    <div id="div4"></div>
+    <div id="div5"></div>
+    <!-- <div id="div6" class="myclass"></div> -->
+    <div id="div6" class="myclass"></div>
+
+    <button onclick="onButtonClick()">Change Div Contents</button>
+
+    <script>
+      function onButtonClick() {
+        // get the object of div1
+        const div1 = document.getElementById('div1')
+        div1.innerText = 'This is updated by button click event'
+
+        document.getElementById('div2').innerText =
+          'This is updated by button click event'
+        document.getElementById('div3').innerText =
+          'This is updated by button click event'
+        document.getElementById('div4').innerText =
+          'This is updated by button click event'
+        document.getElementById('div5').innerText =
+          'This is updated by button click event'
+      }
+    </script>
+  </body>
+</html>
